@@ -1,0 +1,39 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+
+}
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  }
+  
+  
+.banner > .title > svg path{
+
+fill: transparent;
+stroke: white;
+stroke-width: 0.5;
+stroke-dasharray: 150;
+stroke-dashoffset: 150;
+animation: textanimation 2s ease-in-out 1 forwards;
+}
+
+@keyframes textanimation {
+    0%{
+        stroke-dashoffset: 150; 
+    }
+    80%{
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 0; 
+        fill: whitesmoke;
+        
+    }
+}

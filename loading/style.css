@@ -1,0 +1,35 @@
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+
+}
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  }
+
+  .loading{
+    /* background: #000; */
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border:1px solid #4b6cb7;
+    border-top: 1px solid blue;
+    animation: loading-animate .5s linear  infinite forwards;
+
+  }
+  
+  @keyframes loading-animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
